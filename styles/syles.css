@@ -42,7 +42,7 @@ body{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 20px;
+    gap: 10px;
 }
 
 .list__item {
@@ -151,7 +151,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .contact_form {
@@ -327,3 +327,39 @@ body{
     fill: #FBB91E;
 }
 
+@media (max-width: 1200px) {
+    .header_content, .welcome_wrapp, .main-page, .footer_content{
+        width: 890px;
+    }
+    
+    .footer .navbar__list {
+        flex-direction: column;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 920px) {
+    *{
+        font-size: 95%;
+    }
+
+    .welcome_wrapp, .main-page, .footer_content{
+        width: 100vw;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .input-places {
+        flex-direction: column;
+    }
+    
+    .footer__items{
+        flex-direction: column;
+    }
+
+    .contact_info{
+        align-items: center;
+    }
+}
