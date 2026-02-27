@@ -339,12 +339,24 @@ body{
 }
 
 @media (max-width: 920px) {
-    *{
-        font-size: 95%;
+    .title_page{
+        font-size: 1.5rem;
+    }
+
+    .second_title{
+        font-size: 1em;
+    }
+    .third_title {
+        font-size: 1em;
     }
 
     .welcome_wrapp, .main-page, .footer_content{
-        width: 100vw;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .welcome_page {
+        height: 100%;
     }
 
     .header {
@@ -359,7 +371,15 @@ body{
         flex-direction: column;
     }
 
+    .footer_logo{
+        margin-bottom: 10px;
+    }
+
     .contact_info{
         align-items: center;
+    }
+
+    .btn_form, .inputNumber {
+        width: 100%;
     }
 }
